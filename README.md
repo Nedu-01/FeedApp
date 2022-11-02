@@ -1,5 +1,4 @@
 # UserID.java
-
 package com.bptn.models;
 
 import javax.persistence.Column;
@@ -89,3 +88,4 @@ public class UserID {
 
 
 }
+    

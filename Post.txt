@@ -1,0 +1,63 @@
+package com.bptn.models;
+import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+@Entity
+@Table(name = "\"Post\"")
+public class Post {
+	
+	
+	@Id
+	@Column(name = "\"postID\"")
+	private String postId;
+	
+	@Column(name = "\"postType\"")
+	private String postType;
+	
+	@Column(name = "\"post\"")
+	private String post;
+	
+	@Column(name = "\"usernameKey\"")
+	private String username;
+	
+		
+	public Post() {
+		super();
+	}
+	
+	public Post(String postId, String postType, String post, String usernmae, String username) {
+			
+		super();
+		this.postId =  postId;
+		this.postType = postType;
+		this.post = post;
+		this.username = username;
+	}
+public String getpostID() {
+	return this.postId;
+}
+public void setPostID(String postID) {
+	this.postId = postID;
+	
+}
+public String getPostType() {
+	return this.postType;
+}
+public void setPostType(String postType) {
+	this.postType = postType;
+}
+		
+public String getPost() {
+		return this.post;
+}
+public void setpost(String post) {
+		this.post = post;
+}
+public String Username() {
+	return this.username;
+}
+public void setUsername(String username) {
+	this.username = username;
+}
+}

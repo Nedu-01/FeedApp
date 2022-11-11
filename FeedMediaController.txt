@@ -61,7 +61,7 @@ public class FeedMediaController {
         return new ResponseEntity<>(imageMetaData, HttpStatus.OK);
     }
 
-   
+    
     @PostMapping(value = "image/metadata", consumes = MediaType.APPLICATION_JSON_VALUE, produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<Object> createNewImage(@RequestBody FeedMediaRequest feedMediaRequest){
         LOGGER.debug("Executing createNewImage API");
